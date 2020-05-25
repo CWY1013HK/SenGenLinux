@@ -3,6 +3,7 @@
 #include <cstdlib>
 #include <map>
 #include <vector>
+#include <thread>
 #include <ctime>
 using namespace std;
 
@@ -775,5 +776,6 @@ int main() {
     wout << sentence << "\n\n";
   }
   wout.close();
+  std::this_thread::sleep_for(std::chrono::milliseconds(10000));
     std::cout << "\n~END~\n\n";
 }
