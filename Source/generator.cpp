@@ -769,8 +769,6 @@ int main() {
     // hpf 0 = h, 1 = p, 2 = f;
     string sentence = SenStart(sen, hpf, uwb);
     std::cout << sentence << "\n";
-    string t2s = "say " + sentence;
-    std::system(t2s.c_str());
     ofstream wout ("Documents/SenGen/output.txt", std::ios_base::app);
     if (wout.is_open())
   {
