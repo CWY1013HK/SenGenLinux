@@ -640,7 +640,7 @@ int main() {
     
     string wpk;
 
-    ifstream rpf ("Documents/SenGen/Preference.txt");
+    ifstream rpf ("Documents/SenGenLinux/Preference.txt");
     if (rpf.is_open())
   {
         string pref;
@@ -654,11 +654,11 @@ int main() {
     }
     rpf.close();
     
-    string loc = "Documents/SenGen/Wordpacks/";
+    string loc = "Documents/SenGenLinux/Wordpacks/";
     loc = loc + wpk;
 
     ifstream tst (loc + "/wordbase.txt");
-    if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Documents/SenGen/Wordpacks/Default";}
+    if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Documents/SenGenLinux/Wordpacks/Default";}
 
     ifstream rwb (loc + "/wordbase.txt");
     if (rwb.is_open())
@@ -771,7 +771,7 @@ int main() {
     std::cout << sentence << "\n";
     string t2s = "say " + sentence;
     std::system(t2s.c_str());
-    ofstream wout ("Documents/SenGen/output.txt", std::ios_base::app);
+    ofstream wout ("Documents/SenGenLinux/output.txt", std::ios_base::app);
     if (wout.is_open())
   {
     wout << sentence << "\n\n";
