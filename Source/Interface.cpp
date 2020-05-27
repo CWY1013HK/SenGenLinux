@@ -10,7 +10,6 @@
 using namespace std;
 
 int main() {
-    std::system("cd Documents/SenGenLinux");
     std::srand(time(NULL));
     std::system("clear");
     cout << "SENGEN\nCreated by CWY1013HK 2020\nInterface Version : 2.3\n\n";
@@ -27,6 +26,12 @@ int main() {
     wout << wpk << " wpk" << "\n";
   }
   wout.close();
+    ofstream wout ("Documents/SenGenLinux/Preference.txt", std::ios_base::trunc);
+    if (wout.is_open())
+  {
+    wout << wpk << " wpk" << "\n";
+  }
+  wout.close();
     }
     long attempts;
     cout << "\nAttempts : ";
@@ -36,7 +41,7 @@ int main() {
       long looper = 1;
       while (looper <= attempts) {
         cout << "Attempt " << looper << "\n";
-        std::system("\"./generator\"");
+        std::system("\"cd Documents/SenGenLinux && ./generator\"");
         std::this_thread::sleep_for(std::chrono::milliseconds(rand() % 1000 + 1000));
         std::system("clear");
         ++looper;
