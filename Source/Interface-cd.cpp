@@ -10,6 +10,7 @@
 using namespace std;
 
 int main() {
+    std::system("cd Documents/SenGenLinux");
     std::srand(time(NULL));
     std::system("clear");
     cout << "SENGEN\nCreated by CWY1013HK 2020\nInterface Version : 2.3\n\n";
