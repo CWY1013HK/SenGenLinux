@@ -6,4 +6,6 @@ Change the folder name (after unzipping) to 'SenGen'.
 
 Open terminal, cd to the folder location, and run 'sudo apt install gnustep-gui-runtime', 'chmod +x Interface', and 'chmod +x generator'.
 
+Either call 'Interface' from the user directory or from 'Documents/SenGenLinux', or the programme will not work. If you directly execute 'Interface' without using Terminal, you will get an infinite generator. 
+
 -CWY1013HK, 2020
