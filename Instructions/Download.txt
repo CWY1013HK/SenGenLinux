@@ -4,6 +4,6 @@ The full path should look like this :
 
 Change the folder name (after unzipping) to 'SenGen'.
 
-Open terminal, cd to the folder location, and run 'chmod +x Interface-root', 'chmod +x Interface-cd' and 'chmod +x generator'. Run 'Interface-root' if you're running it wihtout cd into the directory, and 'Interface-cd' if you did.
+Open terminal, cd to the folder location, and run 'sudo apt install gnustep-gui-runtime', 'chmod +x Interface-root', 'chmod +x Interface-cd', and 'chmod +x generator'. Run 'Interface-root' if you're running it wihtout cd into the directory, and 'Interface-cd' if you did.
 
 -CWY1013HK, 2020
