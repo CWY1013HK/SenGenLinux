@@ -20,12 +20,12 @@ int main() {
     string wpk;
     cout << "Wordpack : ";
     cin >> wpk;
-    ofstream wout ("Preference.txt", std::ios_base::trunc);
+    ofstream wout ("Documents/SenGenLinux/Preference.txt", std::ios_base::trunc);
     if (wout.is_open())
   {
     wout << wpk << " wpk" << "\n";
   } else {
-    ofstream wou2 ("Documents/SenGenLinux/Preference.txt", std::ios_base::trunc);
+    ofstream wou2 ("Preference.txt", std::ios_base::trunc);
     if (wou2.is_open())
   {
     wou2 << wpk << " wpk" << "\n";
