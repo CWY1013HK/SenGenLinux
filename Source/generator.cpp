@@ -654,8 +654,8 @@ int main() {
     }
     rpf.close();
   
-  ifstream rpf ("Documents/SenGenLinux/Preference.txt");
-    if (rpf.is_open())
+  ifstream rp2 ("Documents/SenGenLinux/Preference.txt");
+    if (rp2.is_open())
   {
         string pref;
         string ptype;
@@ -666,7 +666,7 @@ int main() {
           }
         }
     }
-    rpf.close();
+    rp2.close();
     
     string loc = "Documents/SenGenLinux/Wordpacks/";
     loc = loc + wpk;
