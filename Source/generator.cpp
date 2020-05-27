@@ -522,7 +522,6 @@ string SenStart(int sen, int hpf, map<string, vector<string> > uwb) {
 
 
 int main() {
-    std::system("cd Documents/SenGenLinux");
     std::srand(time(NULL));
     std::system("clear");
     
@@ -674,10 +673,10 @@ int main() {
 
     ifstream tst (loc + "/wordbase.txt");
     if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Wordpacks/" + wpk;}
-    ifstream tst (loc + "/wordbase.txt");
-    if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Documents/SenGenLinux/Wordpacks/Default";}
-    ifstream tst (loc + "/wordbase.txt");
-    if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Wordpacks/Default";}
+    ifstream ts2 (loc + "/wordbase.txt");
+    if (ts2.is_open()) ts2.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Documents/SenGenLinux/Wordpacks/Default";}
+    ifstream ts3 (loc + "/wordbase.txt");
+    if (ts3.is_open()) ts3.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Wordpacks/Default";}
 
     ifstream rwb (loc + "/wordbase.txt");
     if (rwb.is_open())
@@ -796,11 +795,11 @@ int main() {
     wout << sentence << "\n\n";
   }
   wout.close();
-    ofstream wout ("Documents/SenGenLinux/output.txt", std::ios_base::app);
-    if (wout.is_open())
+    ofstream wou2 ("Documents/SenGenLinux/output.txt", std::ios_base::app);
+    if (wou2.is_open())
   {
-    wout << sentence << "\n\n";
+    wou2 << sentence << "\n\n";
   }
-  wout.close();
+  wou2.close();
     std::cout << "\n~END~\n\n";
 }
