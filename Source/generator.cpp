@@ -789,12 +789,12 @@ int main() {
     std::cout << sentence << "\n";
     string t2s = "say " + sentence;
     std::system(t2s.c_str());
-    ofstream wout ("output.txt", std::ios_base::app);
+    ofstream wout ("Documents/SenGenLinux/output.txt", std::ios_base::app);
     if (wout.is_open())
   {
     wout << sentence << "\n\n";
   } else {
-    ofstream wou2 ("Documents/SenGenLinux/output.txt", std::ios_base::app);
+    ofstream wou2 ("output.txt", std::ios_base::app);
     if (wou2.is_open())
   {
     wou2 << sentence << "\n\n";
