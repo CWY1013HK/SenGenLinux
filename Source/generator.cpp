@@ -522,6 +522,7 @@ string SenStart(int sen, int hpf, map<string, vector<string> > uwb) {
 
 
 int main() {
+    std::system("cd Documents/SenGenLinux");
     std::srand(time(NULL));
     std::system("clear");
     
@@ -640,7 +641,7 @@ int main() {
     
     string wpk;
 
-    ifstream rpf ("Documents/SenGenLinux/Preference.txt");
+    ifstream rpf ("Preference.txt");
     if (rpf.is_open())
   {
         string pref;
@@ -654,11 +655,11 @@ int main() {
     }
     rpf.close();
     
-    string loc = "Documents/SenGenLinux/Wordpacks/";
+    string loc = "Wordpacks/";
     loc = loc + wpk;
 
     ifstream tst (loc + "/wordbase.txt");
-    if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Documents/SenGenLinux/Wordpacks/Default";}
+    if (tst.is_open()) tst.close(); else  {cout << "~FOUL WORDPACK LOCATION; TO DEFAULT~"; loc = "Wordpacks/Default";}
 
     ifstream rwb (loc + "/wordbase.txt");
     if (rwb.is_open())
@@ -771,7 +772,7 @@ int main() {
     std::cout << sentence << "\n";
     string t2s = "say " + sentence;
     std::system(t2s.c_str());
-    ofstream wout ("Documents/SenGenLinux/output.txt", std::ios_base::app);
+    ofstream wout ("output.txt", std::ios_base::app);
     if (wout.is_open())
   {
     wout << sentence << "\n\n";
