@@ -793,13 +793,14 @@ int main() {
     if (wout.is_open())
   {
     wout << sentence << "\n\n";
-  }
-  wout.close();
+  } else {
     ofstream wou2 ("Documents/SenGenLinux/output.txt", std::ios_base::app);
     if (wou2.is_open())
   {
     wou2 << sentence << "\n\n";
   }
-  wou2.close();
+  wou2.close();  
+    }
+  wout.close();
     std::cout << "\n~END~\n\n";
 }
