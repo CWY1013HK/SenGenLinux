@@ -4,10 +4,6 @@ The full path should look like this :
 
 Change the folder name (after unzipping) to 'SenGen'.
 
-Open terminal, cd to the folder location, and run 'chmod +x interface' and 'chmod +x generator'.
-
-Copy a version of interface, maybe add a logo, change the name, and put it somewhere you like.
-
-Click on the interface to test it. If it does not function properly, check if you are running MacOS X, have you deleted files, or placed it in the wrong directory.
+Open terminal, cd to the folder location, and run 'chmod +x Interface' and 'chmod +x generator'. Run 'generator', then check in the output. I can't even get it to work in command line currently.
 
 -CWY1013HK, 2020
