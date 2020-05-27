@@ -26,12 +26,12 @@ int main() {
     wout << wpk << " wpk" << "\n";
   }
   wout.close();
-    ofstream wout ("Documents/SenGenLinux/Preference.txt", std::ios_base::trunc);
-    if (wout.is_open())
+    ofstream wou2 ("Documents/SenGenLinux/Preference.txt", std::ios_base::trunc);
+    if (wou2.is_open())
   {
-    wout << wpk << " wpk" << "\n";
+    wou2 << wpk << " wpk" << "\n";
   }
-  wout.close();
+  wou2.close();
     }
     long attempts;
     cout << "\nAttempts : ";
