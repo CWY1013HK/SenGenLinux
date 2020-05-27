@@ -35,7 +35,7 @@ int main() {
       long looper = 1;
       while (looper <= attempts) {
         cout << "Attempt " << looper << "\n";
-        std::system("\"./generator\"");
+        std::system("\"./generator-cd\"");
         std::this_thread::sleep_for(std::chrono::milliseconds(rand() % 1000 + 1000));
         std::system("clear");
         ++looper;
