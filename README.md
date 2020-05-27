@@ -1,5 +1,5 @@
 # SenGen
-A sentence generator I made in a few days with C++ for MacOS X, now slightly altered for it to work on GNU/Linux. If your Linux has text-to-speech installed, feel free to compile the generator with 'say' command.
+A sentence generator I made in a few days with C++ for MacOS X, now slightly talored for GNU/Linux. Please install 'gnustep-gui-runtime' first. 
 
 For detailed instructions on downloading the project and other stuff, read the .txt files in the 'Instructions' folder.
 
