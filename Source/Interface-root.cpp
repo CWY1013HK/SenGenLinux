@@ -20,7 +20,7 @@ int main() {
     string wpk;
     cout << "Wordpack : ";
     cin >> wpk;
-    ofstream wout ("Documents/SenGen/Preference.txt", std::ios_base::trunc);
+    ofstream wout ("Documents/SenGenLinux/Preference.txt", std::ios_base::trunc);
     if (wout.is_open())
   {
     wout << wpk << " wpk" << "\n";
@@ -35,7 +35,7 @@ int main() {
       long looper = 1;
       while (looper <= attempts) {
         cout << "Attempt " << looper << "\n";
-        std::system("\"./Documents/SenGen/generator\"");
+        std::system("\"./Documents/SenGenLinux/generator\"");
         std::this_thread::sleep_for(std::chrono::milliseconds(rand() % 1000 + 1000));
         std::system("clear");
         ++looper;
