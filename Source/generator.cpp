@@ -18,6 +18,8 @@ string (int hpf, map<string, vector<string> > uwb) {
 }
 */
 
+map<string, vector<string> > uwb;
+
 string GetPreNoun(bool single, map<string, vector<string> > uwb) {
   string res;
   int randomiser = rand() % 7;
@@ -509,26 +511,8 @@ string SenStart(int sen, int hpf, map<string, vector<string> > uwb) {
   return res;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-int main() {
-    std::srand(time(NULL));
-    std::system("clear");
-    
-
-    map<string, vector<string> > uwb;
-
-    vector<string> snoun;
+void load() {
+  vector<string> snoun;
     uwb["snoun"] = snoun;
     vector<string> pnoun;
     uwb["pnoun"] = pnoun;
@@ -777,6 +761,23 @@ int main() {
     }
     std::system("clear");
     std::system("clear");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+int main() {
+    std::srand(time(NULL));
+    std::system("clear");
+    load();
 
     //std::system("cd \"desktop/tools/visual studio codes/C++/Sentence Generator\"");
       
